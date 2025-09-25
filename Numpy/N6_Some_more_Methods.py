@@ -16,6 +16,6 @@ print(full)
 print()
 
 #random()
-random = np.random.randint(3,9,(2,4))
+random = np.random.randint(3,90,(2,4))
 print(random)
 print()

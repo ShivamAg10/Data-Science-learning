@@ -1,0 +1,12 @@
+import numpy as np 
+import random
+
+# WAP to get row numbers of Numpy array if any element is having larger value than a specified value
+
+num_arr = np.random.randint(10, 99, (7,2))
+print(num_arr)
+specified_value = random.randint(10,99)
+print(specified_value)
+
+answer = np.where(np.any(num_arr>specified_value, axis=1))
+print(answer)

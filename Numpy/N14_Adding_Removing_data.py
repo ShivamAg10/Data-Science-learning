@@ -3,14 +3,14 @@ import numpy as np
 # Adding two arrays
 arr = np.random.randint(10,99, (2,4))
 arr1 = np.random.randint(10,99, (2,4))
-print("arr:\n", arr)
-print("arr1:\n",arr1)
+# print("arr:\n", arr)
+# print("arr1:\n",arr1)
 
 combined_arr = np.concatenate((arr, arr1))
-print("combined arr: \n", combined_arr)
+# print("combined arr: \n", combined_arr)
 
 # Array Compatibility
-print("Checking array compatibility: \n", arr.shape == arr1.shape)
+# print("Checking array compatibility: \n", arr.shape == arr1.shape)
 
 # vstack() -> adds row in a array
 arr2 = np.random.randint(10,99,(4))

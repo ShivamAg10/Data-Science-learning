@@ -1,10 +1,15 @@
-import numpy as np
+## Multiple Assignment
+a,b,c = 10,11,2
+print(a,b,c)
 
-arr = np.random.randint(3,90,(2,8))
-print(arr)
-print()
-print()
+## Type Casting
+a = 7
+print(a)
+a = float(a)
+print(a)
+a = "7"
+print(a)
 
-for i in arr:
-    for j in i:
-        print(j, end="  ")
+## Arithmetic Operator
+a = 7+5-5*2/3//4%3
+print(a)

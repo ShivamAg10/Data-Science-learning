@@ -4,3 +4,4 @@ import numpy as np
 print(np)
 # Output: <module 'numpy' from 'path'>
 
+print(np.__version__) 

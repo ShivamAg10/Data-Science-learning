@@ -11,3 +11,6 @@ print(arr[indices_row_wise])
 
 indices_row_wise = [0,2]
 print(arr[indices_row_wise])
+
+indices_column_wise = [0,2]
+print(arr[:, indices_column_wise])

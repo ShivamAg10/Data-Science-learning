@@ -23,5 +23,5 @@ df = pd.read_csv("D:\desktop\Data Science Learning\Data-Science-learning\Pandas\
 # print(len(df[(df["CC Provider"]=="Mastercard") & (df["Purchase Price"] > 50)]))
 
 # 7. Find email of person with credit card number: 4664825258997302
-print(df[df["Credit Card"] == 4664825258997302]["Email"])
+# print(df[df["Credit Card"] == 4664825258997302]["Email"])
 # print(df["Credit Card"])

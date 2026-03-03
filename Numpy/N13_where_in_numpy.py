@@ -4,8 +4,8 @@ arr = np.random.randint(10,99,(10))
 print(arr)
 
 where_result = np.where(arr > 50)
-# print(where_result)
-# print(arr[where_result])
+print(where_result)
+print(arr[where_result])
 
 # we can give more than 1 condition as well
 condition_array = np.where(arr > 50, arr * 2, arr)

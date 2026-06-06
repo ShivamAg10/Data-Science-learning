@@ -30,4 +30,20 @@ df2 = pd.read_csv("D:\desktop\Data Science Learning\Data-Science-learning\Pandas
 
 df2['timestamp'] = pd.to_datetime(df2['timestamp'])
 # print(df2["timestamp"].dtypes)
-print(df2)
+# print(df2)
+
+## Apply method - apply()
+df["tax"] = df['income'].apply(lambda x : "20%" if x > 50000 else "10%")
+# print(df)
+
+## Map Method - map()
+gender_map = {
+    "Male" : "M",
+    "Female" : "F", 
+    "Unknown" : "U"
+}
+df["gender"] = df['gender'].map(gender_map)
+# print(df)
+
+df = df.assign(new_income = df['income'] * 1.1)
+print(df)

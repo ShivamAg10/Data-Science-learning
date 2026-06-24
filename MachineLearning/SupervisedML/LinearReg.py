@@ -4,6 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
 
 insurance_data = pd.read_csv("MachineLearning\DataSet\insurance.csv")
 # print(insurance_data)
@@ -64,5 +65,10 @@ model.fit(X_train, Y_train)
 # ## Step-6
 # Predicting Values
 y_pred = model.predict(X_test)
-print(y_pred[0])
-print(Y_test.iloc[0])
+# print(y_pred[0])
+# print(Y_test.iloc[0])
+
+## Step-7
+# Evaluting Model
+r2 = r2_score(Y_test, y_pred)
+print(r2)

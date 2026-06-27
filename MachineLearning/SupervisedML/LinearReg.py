@@ -82,3 +82,8 @@ y_pred = model.predict(X_test)
 # Evaluting Model
 r2 = r2_score(Y_test, y_pred)
 print(r2)
+
+## Analyzing Underfit or Overfit
+y_train_pred = model.predict(X_train)
+r2_train = r2_score(Y_train, y_train_pred)
+print(r2_train)

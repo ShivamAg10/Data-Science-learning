@@ -43,9 +43,19 @@ sns.scatterplot(
 
 ## Step - 3
 # Whenever, we prepare our data for Machine Learning Algorithm we divie data into X(input) & Y(output)
-X = insurance_data.drop(["charges", "region"], axis=1)
+
+X = insurance_data.drop(columns=["charges"])
 Y = insurance_data["charges"]
+
+## One hot encoding
+X = pd.get_dummies(X, columns=["region"], drop_first=True, dtype=int)
+# print(X.head())
 # print(X)
+
+## Interaction Features
+X["age_smoker"] = X["age"] * X["smoker"]
+# print(X["age_smoker"].head())
+X["bmi_smoker"] = X['bmi'] * X["smoker"]
 
 ## Step=4
 # train test split
